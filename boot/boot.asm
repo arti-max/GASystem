@@ -28,7 +28,9 @@ start:
     int 0x13
     jc disk_error
 
+    jmp 0x0000:0x1000
     jmp $
+    hlt
 
 print:
     lodsb
