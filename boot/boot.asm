@@ -22,7 +22,7 @@ start:
     mov ch, 0
     mov cl, 2
     mov dh, 1
-    mov dl, 0x80
+    mov dl, [boot_disk]
     mov bx, 0x1000
 
     int 0x13
